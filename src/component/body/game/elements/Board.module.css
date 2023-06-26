@@ -1,0 +1,5 @@
+.board-row:after { /* 실제 사용시 boardRow 로 써야한다. */
+    clear: both;
+    content: "";
+    display: table;
+}

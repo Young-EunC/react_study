@@ -1,0 +1,25 @@
+.sub_title {
+    margin: 10px 0 5px 3px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table td {
+    width: 25%;
+    height: 60px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+table td:first-child {
+    width: 10%;
+}
+table td:last-child {
+    width: 40%;
+}
+.off td {
+    background: #eee;
+    color: #ccc;
+}

@@ -1,0 +1,22 @@
+
+.list_day {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: unset;
+}
+
+.list_day li {
+    flex: 20% 0 0;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
+
+.list_day a {
+    display: block;
+    padding: 5px 0;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
