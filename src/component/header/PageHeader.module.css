@@ -12,6 +12,6 @@
     display: inline-block;
 }
 .menu_button {
-    display: inline-block;
+    /* display: inline-block; */
     float: right;
 }

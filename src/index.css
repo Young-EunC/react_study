@@ -55,7 +55,8 @@ a {
 
 .body {
     /* width: 438px; */
-    width: calc(100% - 62px);
+    /* width: calc(100% - 62px); */
+    width: 100%;
     height: 600px; /* calc(100% - 100px); */
     padding: 10px 30px;
     border: 1px solid #dddddd;

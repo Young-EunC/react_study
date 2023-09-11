@@ -1,17 +1,14 @@
 import './index.css';
 import React from 'react';
-
-import Header from "./component/header/Header";
-import PageBody from "./component/body/Pagebody";
+import Pages from './component/Page';
 
 
 function App(){
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const menu = (urlSearchParams.get('menu'))? urlSearchParams.get('menu') : '';
+
     return(
-        <>
-            <Header/>
-            {/*<PageBody menu={"ttt"}/>*/}
-            <PageBody menu={""}/>
-        </>
+        <Pages menu={menu}/>
     );
 }
 

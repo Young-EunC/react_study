@@ -7,6 +7,7 @@ import styles from "./Pagebody.module.css";
 class PageBody extends React.Component{
     constructor(props) {
         super(props);
+
         this.state = {
             menuIndex: props.menu,
             /*bodyTitle: "",*/
@@ -44,31 +45,27 @@ class PageBody extends React.Component{
                 bodyTitle = "Main";
                 break;
         }
-        if(bodyTitle !== "Main"){
-            return(
-                <>
-                    <div className={"body"}>
-                        <BodyTitle title={bodyTitle}/>
-                        {body}
-                    </div>
-                    <div className={"footer"}>
-                        <input type={"button"} value={"GoMain"} className={styles.menu_button} onClick={event => this.handleClick(event)}/>
-                    </div>
-                </>
-            );
-        } else {
-            return(
-                <>
-                    <div className={"body"}>
-                        <BodyTitle title={bodyTitle}/>
-                        <input type={"button"} value={"TickTackToe"} onClick={event => this.handleClick(event)}/>
-                        <input type={"button"} value={"Dictionary"} onClick={event => this.handleClick(event)}/>
-                    </div>
-                    <div className={"footer"}></div>
-                </>
-            );
-        }
-
+        // if(bodyTitle !== "Main"){
+            
+        // } else {
+        //     return(
+        //         <>
+        //             <div className={"body"}>
+        //                 <BodyTitle title={bodyTitle}/>
+        //                 <input type={"button"} value={"TickTackToe"} onClick={event => this.handleClick(event)}/>
+        //                 <input type={"button"} value={"Dictionary"} onClick={event => this.handleClick(event)}/>
+        //             </div>
+        //             <div className={"footer"}></div>
+        //         </>
+        //     );
+        // }
+        return(
+            <div className={"body"}>
+                <BodyTitle title={bodyTitle}/>
+                {body}
+                <input type={"button"} value={"GoMain"} className={styles.menu_button} onClick={event => this.handleClick(event)}/>
+            </div>
+        );
     };
 
 }

@@ -12,6 +12,6 @@ input[type="button"]{
 .menu_button {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     margin-bottom: 10px !important;
 }
